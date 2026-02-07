@@ -398,7 +398,7 @@ function App() {
               `}>
                 {isPossessed
                   ? '⚠ DIMENSIONAL BREACH - ENTITY PRESENCE DETECTED ⚠'
-                  : '107.7 FM • Upside Down Communication System • Classified 1983'}
+                  : '94.5 FM • Upside Down Communication System • Classified 1983'}
               </div>
             </div>
 
