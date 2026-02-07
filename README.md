@@ -34,7 +34,7 @@ WSQK is the mysterious radio building from Stranger Things' final season. This a
 
 **Branding Elements:**
 - 📻 WSQK logo and icon
-- 107.7 FM frequency
+- 94.5 FM frequency
 - Hawkins Signal Relay subtitle
 - Classified 1983 designation
 - Department of Energy security
