@@ -270,6 +270,32 @@ When possessed:
 4. Enter: ↑ ↑ ↓ ↓ ← → ← → B A
 5. System restores, sanity → 100%
 
+## 📦 Data Storage & Export
+
+This project **does not use any database**. All data generated inside the application is stored temporarily in-memory during each session.  
+For users who want to save or back up their information, the system provides built-in export options that allow downloading data anytime.
+
+---
+
+## ✅ No Database Required
+
+- No external setup  
+- No backend configuration  
+- No cloud or server storage  
+- Everything runs locally inside the browser  
+
+---
+
+## 📤 Data Export
+
+The application supports exporting user data in multiple formats, including:
+
+- **JSON export**  
+- **Text export**  
+- **Custom formatted logs**  
+
+These export options ensure users can save, reuse, or manually import their data without requiring any persistent backend.
+
 ## 🎮 Complete Controls
 
 ### Keyboard
@@ -298,32 +324,6 @@ When possessed:
 - Press Start 2P (pixel/retro)
 - VT323 (terminal)
 - Orbitron (futuristic)
-
-## 📦 Data Storage & Export
-
-This project **does not use any database**. All data generated inside the application is stored temporarily in-memory during each session.  
-For users who want to save or back up their information, the system provides built-in export options that allow downloading data anytime.
-
----
-
-## ✅ No Database Required
-
-- No external setup  
-- No backend configuration  
-- No cloud or server storage  
-- Everything runs locally inside the browser  
-
----
-
-## 📤 Data Export
-
-The application supports exporting user data in multiple formats, including:
-
-- **JSON export**  
-- **Text export**  
-- **Custom formatted logs**  
-
-These export options ensure users can save, reuse, or manually import their data without requiring any persistent backend.
 
 
 ## 📊 Feature Comparison
