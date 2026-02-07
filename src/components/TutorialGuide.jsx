@@ -82,26 +82,27 @@ const TutorialGuide = ({ isVisible, onClose, isPossessed }) => {
     <AnimatePresence>
       {isVisible && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop (Top-most layer) */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-90 z-80"
+            className="fixed inset-0 bg-black bg-opacity-90 z-[99990]"
           />
 
-          {/* Centered Modal Wrapper */}
+          {/* Modal Wrapper (Perfect center) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 50 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 50 }}
-            className="fixed inset-0 flex items-center justify-center z-90"
+            className="fixed inset-0 flex items-center justify-center z-[99999]"
           >
             {/* Modal Box */}
             <div
               className={`
                 w-full max-w-lg bg-black border-4 p-8 relative
                 ${isPossessed ? 'border-terminal-red' : 'border-terminal-green'}
+                z-[100000]
               `}
               style={{
                 boxShadow: isPossessed
@@ -185,7 +186,7 @@ const TutorialGuide = ({ isVisible, onClose, isPossessed }) => {
                 Step {currentStep + 1} of {TUTORIAL_STEPS.length}
               </div>
 
-              {/* Navigation Buttons */}
+              {/* Navigation */}
               <div className="flex justify-between gap-3">
                 <button
                   onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
