@@ -120,7 +120,7 @@ function App() {
     document.addEventListener('click', initSound);
 
     addLog('success', 'WSQK Signal Relay initialized - Connection established');
-    addLog('info', 'Frequency locked at 107.7 FM');
+    addLog('info', 'Frequency locked at 94.5 FM');
     addLog('info', 'Hawkins National Laboratory uplink active');
 
     return () => {
