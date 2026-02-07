@@ -301,23 +301,23 @@ When possessed:
 
 ## 📊 Feature Comparison
 
-| Feature | Basic | WSQK Ultimate |
-|---------|-------|---------------|
-| Access Gate | ❌ | ✅ Riddle Security |
-| WSQK Branding | ❌ | ✅ Full Theme |
-| Sanity Meter | Small | ✅ Large & Prominent |
-| Two Pages | ❌ | ✅ Gate + Communicator |
-| Morse Encoder | ✅ | ✅ |
-| Morse Decoder | ❌ | ✅ |
-| Contacts | ❌ | ✅ 8 Characters |
-| Emergency | ❌ | ✅ 6 Messages |
-| Archive | ❌ | ✅ Full History |
-| Ambient Sound | ❌ | ✅ 3 Types |
-| Statistics | ❌ | ✅ Complete |
-| Themes | 1 | ✅ 5 Schemes |
-| Settings | ❌ | ✅ Full Panel |
-| Tutorial | ❌ | ✅ Interactive |
-| **Total Components** | 6 | **20** |
+| Feature | WSQK Ultimate |
+|---------|---------------|
+| Access Gate | Riddle Security |
+| WSQK Branding | Full Theme |
+| Sanity Meter | Large & Prominent |
+| Two Pages | Gate + Communicator |
+| Morse Encoder | Done |
+| Morse Decoder | Done |
+| Contacts | 8 Characters |
+| Emergency | 6 Messages |
+| Archive | Full History |
+| Ambient Sound | 3 Types |
+| Statistics | Complete |
+| Themes | 5 Schemes |
+| Settings | Full Panel |
+| Tutorial | Interactive |
+| **Total Components** | **20** |
 
 ## 🎨 Themes
 
