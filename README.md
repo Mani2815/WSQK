@@ -5,7 +5,7 @@
 ![Stranger Things Theme](https://img.shields.io/badge/Theme-Stranger%20Things-red)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Version](https://img.shields.io/badge/Version-WSQK%20Ultimate-gold)
-![Frequency](https://img.shields.io/badge/Frequency-107.7%20FM-green)
+![Frequency](https://img.shields.io/badge/Frequency-94.5%20FM-green)
 
 ## 🔐 Two-Page Security System
 
