@@ -440,34 +440,6 @@ vercel
 7. **Adjust sanity decay** for difficulty
 8. **Archive messages** with auto-save on
 
-## 🔮 Easter Eggs
-
-- WSQK references final season
-- "UP THE HILL" is where Will hid
-- All contacts have unique statuses
-- ELEVEN emergency message
-- Possession counts tracked
-- Konami code recovery
-- Department of Energy warnings
-
-## 📞 Support
-
-- Check interactive tutorial
-- Review this README
-- Inspect browser console
-- Verify dependencies installed
-
-## 🙏 Credits
-
-- **Stranger Things**: Theme and lore
-- **Duffer Brothers**: Show creators
-- **WSQK**: Final season radio station
-- **Community**: Open source libraries
-
-## 📄 License
-
-MIT License - Free to use and modify
-
 ---
 
 **WSQK — Hawkins Signal Relay** 📻  
