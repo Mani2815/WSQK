@@ -1,0 +1,242 @@
+/* CRT Screen Effects */
+
+.crt-screen {
+  position: relative;
+  background: #0a0a0a;
+  overflow: hidden;
+}
+
+/* Screen curvature */
+.crt-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Scanlines */
+.crt-scanlines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 50;
+  animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+/* Animated scanline */
+.crt-scanline-moving {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 60;
+  animation: movingScanline 3s linear infinite;
+}
+
+@keyframes movingScanline {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Screen flicker */
+.crt-flicker {
+  animation: flicker 0.15s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 0.98;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+/* Screen glow */
+.crt-glow {
+  box-shadow: 
+    inset 0 0 100px rgba(0, 255, 65, 0.05),
+    0 0 50px rgba(0, 255, 65, 0.1),
+    0 0 100px rgba(0, 255, 65, 0.05);
+}
+
+/* Noise overlay */
+.crt-noise {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 40;
+  animation: noise 0.2s steps(10) infinite;
+}
+
+@keyframes noise {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -5%); }
+  20% { transform: translate(-10%, 5%); }
+  30% { transform: translate(5%, -10%); }
+  40% { transform: translate(-5%, 15%); }
+  50% { transform: translate(-10%, 5%); }
+  60% { transform: translate(15%, 0); }
+  70% { transform: translate(0, 10%); }
+  80% { transform: translate(-15%, 0); }
+  90% { transform: translate(10%, 5%); }
+}
+
+/* VHS static effect */
+.crt-static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 45;
+}
+
+/* Phosphor glow */
+.phosphor-glow {
+  text-shadow: 
+    0 0 2px rgba(0, 255, 65, 0.8),
+    0 0 4px rgba(0, 255, 65, 0.6),
+    0 0 6px rgba(0, 255, 65, 0.4),
+    0 0 8px rgba(0, 255, 65, 0.2);
+}
+
+/* Screen distortion */
+.crt-distortion {
+  filter: 
+    contrast(1.1)
+    brightness(1.05)
+    saturate(1.2);
+}
+
+/* Possessed mode CRT effects */
+.crt-possessed {
+  animation: possessedFlicker 0.1s infinite;
+}
+
+.crt-possessed .crt-glow {
+  box-shadow: 
+    inset 0 0 100px rgba(255, 0, 102, 0.1),
+    0 0 50px rgba(255, 0, 102, 0.2),
+    0 0 100px rgba(255, 0, 102, 0.1);
+}
+
+.crt-possessed .phosphor-glow {
+  text-shadow: 
+    0 0 2px rgba(255, 0, 102, 0.8),
+    0 0 4px rgba(255, 0, 102, 0.6),
+    0 0 6px rgba(255, 0, 102, 0.4),
+    0 0 8px rgba(255, 0, 102, 0.2);
+}
+
+@keyframes possessedFlicker {
+  0%, 100% {
+    opacity: 1;
+    filter: invert(0);
+  }
+  25% {
+    opacity: 0.9;
+    filter: invert(0.1);
+  }
+  50% {
+    opacity: 0.95;
+    filter: invert(0);
+  }
+  75% {
+    opacity: 0.85;
+    filter: invert(0.15);
+  }
+}
+
+/* Screen burn effect */
+.screen-burn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at center,
+    transparent 30%,
+    rgba(0, 255, 65, 0.02) 70%,
+    rgba(0, 255, 65, 0.05) 100%
+  );
+  pointer-events: none;
+  z-index: 35;
+}
+
+/* Chromatic aberration */
+.chromatic-aberration {
+  position: relative;
+}
+
+.chromatic-aberration::before,
+.chromatic-aberration::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+.chromatic-aberration::before {
+  color: #ff0000;
+  transform: translate(-2px, 0);
+}
+
+.chromatic-aberration::after {
+  color: #00ffff;
+  transform: translate(2px, 0);
+}
