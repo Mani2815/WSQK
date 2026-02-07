@@ -455,7 +455,7 @@ MIT License - Free to use and modify
 ---
 
 **WSQK — Hawkins Signal Relay** 📻  
-**Frequency: 107.7 FM** 📡  
+**Frequency: 94.5 FM** 📡  
 **Classified 1983 Device** 🔐  
 **Upside Down Communication System** 🌀
 
